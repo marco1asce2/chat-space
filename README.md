@@ -53,7 +53,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|title|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :messages
@@ -72,4 +72,4 @@ Things you may want to cover:
 
 ###Association
 -belongs_to :user
--belongs__to :group
+-belongs_to :group
