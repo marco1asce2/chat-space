@@ -27,8 +27,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
+|group|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -67,8 +67,8 @@ Things you may want to cover:
 |------|----|-------|
 |text|text|
 |image|text|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
+|group|reference|null: false, foreign_key: true|
 
 ###Association
 -belongs_to :user
