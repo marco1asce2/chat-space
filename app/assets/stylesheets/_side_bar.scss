@@ -1,0 +1,47 @@
+.Chat__Side {
+  background-color: #253141;
+  width: 300px;
+  &__Header {
+    height: 100px;
+    padding: 0 20px;
+    display:flex;
+    align-items: center;
+    &__Box {
+      height: 20px;
+      width: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .User__Name {
+        color: $section-color;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .Icon__Menu {
+        display: flex;
+        .Edit__Icon, .New__Icon {
+          color: $section-color;
+          display: flex;
+          text-decoration: none;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &__Group {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 0 20px;
+    &__Box {
+      color: $section-color;
+      .Group__Name {
+        font-size: 15px;
+        padding: 20px 0 5px 0;
+      }
+      .Message {
+        font-size: 11px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.Chat__Side
+  .Chat__Side__Header
+    .Chat__Side__Header__Box
+      %p.User__Name masa
+      %ul.Icon__Menu
+        %li.Edit__User
+          =link_to "#", class: "Edit__Icon" do
+            = icon('far', 'edit')
+        %li.New__Group
+          =link_to "#", class: "New__Icon" do
+            = icon('fas', 'cog')
+  .Chat__Side__Group
+    .Chat__Side__Group__Box
+      %p.Group__Name techcamp
+      %p.Message まだメッセージはありません
+    .Chat__Side__Group__Box
+      %p.Group__Name techcamp
+      %p.Message まだメッセージはありません
+    .Chat__Side__Group__Box
+      %p.Group__Name techcamp
+      %p.Message まだメッセージはありません
