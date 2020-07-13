@@ -1,0 +1,35 @@
+.Chat__Main
+  .Chat__Main__Header
+    .Chat__Main__Header__LeftBox
+      %p.CurrentGroup test
+      %ul.MemberList
+        Member:
+        %li.UserName masa
+    .Chat__Main__Header__RightBox
+      %p.Edit__Btn
+        =link_to "#" do
+          Edit
+  .Chat__Main__Message
+    .Chat__Main__Message__Box
+      %ul.MessageData
+        %li.UserName masa
+        %li.CreatedAt 2020年07月11日21時27分
+      %p.Type_A_Message おはよう
+    .Chat__Main__Message__Box
+      %ul.MessageData
+        %li.UserName masa
+        %li.CreatedAt 2020年07月11日21時27分
+      %p.Type_A_Message おはよう
+    .Chat__Main__Message__Box
+      %ul.MessageData
+        %li.UserName masa
+        %li.CreatedAt 2020年07月11日21時27分
+      %p.Type_A_Message おはよう
+  .Chat__Main__Form
+    %form.NewMessage
+      .InputMessage
+        %input{class: "InputText", type: "text", placeholder: "type a message"}
+        %label{class: "InputImage"}
+          = icon('fas', 'image', class: "ImageIcon")
+          %input{class: "ImageFile", type: "file"}
+      %input{class: "SubmitBtn", type: "submit", value: "SEND"}
