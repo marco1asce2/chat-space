@@ -1,10 +1,11 @@
 .Chat__Side
   .Chat__Side__Header
     .Chat__Side__Header__Box
-      %p.User__Name masa
+      %p.User__Name
+        = current_user.name
       %ul.Icon__Menu
         %li.Edit__User
-          =link_to "#", class: "Edit__Icon" do
+          =link_to edit_user_path(current_user), class: "Edit__Icon" do
             = icon('far', 'edit')
         %li.New__Group
           =link_to "#", class: "New__Icon" do
