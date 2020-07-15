@@ -4,19 +4,17 @@
       %p.User__Name
         = current_user.name
       %ul.Icon__Menu
+        %li.New__Group
+          =link_to new_group_path(current_user), class: "New__Icon" do
+            = icon('far', 'edit')
         %li.Edit__User
           =link_to edit_user_path(current_user), class: "Edit__Icon" do
-            = icon('far', 'edit')
-        %li.New__Group
-          =link_to "#", class: "New__Icon" do
             = icon('fas', 'cog')
   .Chat__Side__Group
-    .Chat__Side__Group__Box
-      %p.Group__Name techcamp
-      %p.Message まだメッセージはありません
-    .Chat__Side__Group__Box
-      %p.Group__Name techcamp
-      %p.Message まだメッセージはありません
-    .Chat__Side__Group__Box
-      %p.Group__Name techcamp
-      %p.Message まだメッセージはありません
+    - current_user.groups.each do |group|
+      .Chat__Side__Group__Box
+        = link_to '#' do
+          %p.Group__Name
+            = group.name
+          %p.Message
+            メッセージはまだありません
