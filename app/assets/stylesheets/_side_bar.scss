@@ -33,14 +33,17 @@
     background-color: #2f3e51;
     padding: 0 20px;
     &__Box {
+      a{
       color: $section-color;
-      .Group__Name {
-        font-size: 15px;
-        padding: 20px 0 5px 0;
-      }
-      .Message {
-        font-size: 11px;
-        padding-bottom: 40px;
+      text-decoration: none;
+        .Group__Name {
+          font-size: 15px;
+          padding: 20px 0 5px 0;
+        }
+        .Message {
+          font-size: 11px;
+          padding-bottom: 40px;
+        }
       }
     }
   }
