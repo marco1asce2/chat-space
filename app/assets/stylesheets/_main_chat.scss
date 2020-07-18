@@ -42,6 +42,7 @@
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding-left: 40px;
+    overflow:scroll;
     &__Box {
       .MessageData {
         padding-top: 35px;
@@ -59,7 +60,8 @@
       .Type_A_Message {
         font-size: 14px;
         color: #434A54;
-        margin: 12px 0 46px;
+        margin-top: 12px;
+        font-weight: bold;
       }
     }
   }
