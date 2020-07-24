@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="Chat__Main__Message__Box">
+        `<div class="Chat__Main__Message__Box" data-message-id=${message.id}>
           <ul class="MessageData">
             <li class="UserName">
               ${message.user_name}
@@ -21,7 +21,7 @@ $(function(){
       return html;
     } else {
       let html =
-        `<div class="Chat__Main__Message__Box">
+        `<div class="Chat__Main__Message__Box" data-message-id=${message.id}>
           <ul class="MessageData">
             <li class="UserName">
               ${message.user_name}
@@ -64,6 +64,5 @@ $(function(){
     .always(() => {
       $(".SubmitBtn").removeAttr("disabled");
     });
-  })
+  });
 });
-  
